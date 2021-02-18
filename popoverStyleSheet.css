@@ -1,0 +1,49 @@
+
+  .wrapper{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .trigger {
+    margin-bottom: 10px;
+    
+  }
+  
+  .contentPopup {
+    visibility: hidden;
+    background-color: #d3d0d0;
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px;
+    
+  }
+  .popupLayerText{
+    font: 700 0.9rem 'Roboto Slab', sans-serif;
+    color:  #5c5c5cea;
+    float: left;
+    margin-top: 2px;
+  }
+  .popupLayerInput{
+    width: 70px;
+    float: right;
+    margin-left: 10px;
+              
+  }
+  .popupLayerWindow{
+    height:30px;
+  }
+  
+  .contentPopup:before {
+    position: absolute;
+    top: -10px;
+    content: "";
+    
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #bfbfbf transparent;
+  }
+  
+  .wrapper:hover .contentPopup {
+    visibility: visible;
+  }

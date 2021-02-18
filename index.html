@@ -1,0 +1,356 @@
+ <!DOCTYPE html>
+ <html>
+
+    <head>
+        <title></title>
+        <link href="styleSheet.css" rel="stylesheet">
+        <link href="buttonStyleSheet.css" rel="stylesheet">
+        <link href="modalStyleSheet.css" rel="stylesheet">
+        <link href="modalStyleSheetLayer0.css" rel="stylesheet">
+        <link href="modalStyleSheetLayer1.css" rel="stylesheet">
+        <link href="modalStyleSheetLayer2.css" rel="stylesheet">
+        <link href="modalStyleSheetOutput.css" rel="stylesheet">
+        <link href="dropDownButtonStyleSheet.css" rel="stylesheet">
+        <link href="popoverStyleSheet.css" rel="stylesheet">
+
+        
+    </head>
+    <body>
+        <nav id = "navigationBar">
+            <button class="btn draw-border" id="creareReteaNeuronalaButton" >New Neuronal Network</button>
+            <button class="btn draw-border" id="OutputButton" >Output</button>
+            <button class="btn draw-border" id="Layer2Button" >Layer2</button>
+            <button class="btn draw-border" id="Layer1Button" >Layer1</button>
+            <button class="btn draw-border" id="Layer0Button" >Layer0</button>
+        </nav>
+        <div class="modalLayer0">
+            <div class="modal-contentLayer0">
+                <div id="topBarLayer0">
+                    <p id="topBarParagraphLayer0">Layer0</p>
+                    <button class="btn draw-border" id="modalCloseButtonLayer0" >X</button>
+                </div>
+                <div>
+                    <div class="Layer0Elements" >
+                        <p class="Layer0Paragraph">Input Function</p>
+                        <div class="box">
+                            <select id = "layer0InputFunctionSelect">
+                                <option value="1">Maxim</option>
+                                <option value="2">Minim</option>
+                                <option value="3">Suma</option>
+                                <option value="4">Produs</option>
+                            </select>
+                          </div>
+
+                    </div>
+
+                    <div class="Layer0Elements" >
+                        <p class="Layer0Paragraph">Activation Function</p>
+                        <div class="box2">
+                            <select id = "layer0ActivationFunctionSelect">
+                                <option value="1">Liniara</option>
+                                <option value="2">Sigmoidala</option>
+                                <option value="3">Tangenta Hiperbolica</option>
+                                <option value="4">Treapta</option>
+                                <option value="5">Semn</option>
+                            </select>
+                          </div>
+                    </div>
+                        
+                    <div class="Layer0Elements" >
+                        <div id="tetaLayer0Element">
+                            <p class="Layer0Paragraph">θ</p>
+                            <input type="number" class="Layer0Inputs" id = "layer0OmegaInput" value="0" step="0.01">
+                        </div>
+                        <div id="alfaLayer0Element">
+                            <p class="Layer0Paragraph"> α</p>
+                            <input type="number" class="Layer0Inputs"  id = "layer0AlfaInput" value="0" step="0.01">
+                        </div>
+
+                    </div>
+                    <div class="Layer0Elements" >
+                        <p class="Layer0Paragraph">Output Function</p>
+                        <div class="box3">
+                            <select id="Layer0SelectBinar">
+                                <option value="1">Real</option>
+                                <option value="2">Binar</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <button class="btn draw-border" id="confirmLayer0InfoButton" >Ok</button>
+
+                    
+                    
+                </div>
+
+            </div>
+        </div>
+        <div class="modalLayer1">
+            <div class="modal-contentLayer1">
+                <div id="topBarLayer1">
+                    <p id="topBarParagraphLayer1">Layer1</p>
+                    <button class="btn draw-border" id="modalCloseButtonLayer1" >X</button>
+                </div>
+                <div>
+                    <div class="Layer1Elements" >
+                        <p class="Layer1Paragraph">Input Function</p>
+                        <div class="box">
+                            <select id="layer1InputFunctionSelect">
+                                <option value="1">Maxim</option>
+                                <option value="2">Minim</option>
+                                <option value="3">Suma</option>
+                                <option value="4">Produs</option>
+                            </select>
+                          </div>
+
+                    </div>
+
+                    <div class="Layer1Elements" >
+                        <p class="Layer1Paragraph">Activation Function</p>
+                        <div class="box2">
+                            <select id="layer1ActivationFunctionSelect">
+                                <option value="1">Liniara</option>
+                                <option value="2">Sigmoidala</option>
+                                <option value="3">Tangenta Hiperbolica</option>
+                                <option value="4">Treapta</option>
+                                <option value="5">Semn</option>
+                            </select>
+                          </div>
+                    </div>
+                        
+                    <div class="Layer1Elements" >
+                        <div id="tetaLayer1Element">
+                            <p class="Layer1Paragraph">θ</p>
+                            <input type="number" class="Layer1Inputs" id="layer1OmegaInput" value="0" step="0.01">
+                        </div>
+                        <div id="alfaLayer1Element">
+                            <p class="Layer1Paragraph"> α</p>
+                            <input type="number" class="Layer1Inputs" id="layer1AlfaInput" value="0" step="0.01">
+                        </div>
+
+                    </div>
+                    <div class="Layer1Elements" >
+                        <p class="Layer1Paragraph">Output Function</p>
+                        <div class="box3">
+                            <select id = "Layer1SelectBinar">
+                                <option value="1">Real</option>
+                                <option value="2">Binar</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <button class="btn draw-border" id="confirmLayer1InfoButton" >Ok</button>
+
+                    
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modalLayer2">
+            <div class="modal-contentLayer2">
+                <div id="topBarLayer2">
+                    <p id="topBarParagraphLayer2">Layer2</p>
+                    <button class="btn draw-border" id="modalCloseButtonLayer2" >X</button>
+                </div>
+                <div>
+                    <div class="Layer2Elements" >
+                        <p class="Layer2Paragraph">Input Function</p>
+                        <div class="box">
+                            <select id="layer2InputFunctionSelect">
+                                <option value="1">Maxim</option>
+                                <option value="2">Minim</option>
+                                <option value="3">Suma</option>
+                                <option value="4">Produs</option>
+                            </select>
+                          </div>
+
+                    </div>
+
+                    <div class="Layer2Elements" >
+                        <p class="Layer2Paragraph">Activation Function</p>
+                        <div class="box2">
+                            <select id="layer2ActivationFunctionSelect">
+                                <option value="1">Liniara</option>
+                                <option value="2">Sigmoidala</option>
+                                <option value="3">Tangenta Hiperbolica</option>
+                                <option value="4">Treapta</option>
+                                <option value="5">Semn</option>
+                            </select>
+                          </div>
+                    </div>
+                        
+                    <div class="Layer2Elements" >
+                        <div id="tetaLayer2Element">
+                            <p class="Layer2Paragraph">θ</p>
+                            <input type="number" class="Layer2Inputs" id="layer2OmegaInput" value="0" step="0.01">
+                        </div>
+                        <div id="alfaLayer2Element">
+                            <p class="Layer2Paragraph"> α</p>
+                            <input type="number" class="Layer2Inputs" id="layer2AlfaInput" value="0" step="0.01" >
+                        </div>
+
+                    </div>
+                    <div class="Layer2Elements" >
+                        <p class="Layer2Paragraph">Output Function</p>
+                        <div class="box3">
+                            <select id="Layer2SelectBinar">
+                                <option value="1">Real</option>
+                                <option value="2">Binar</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <button class="btn draw-border" id="confirmLayer2InfoButton" >Ok</button>
+
+                    
+                    
+                </div>
+
+            </div>
+        </div>
+        <div class="modalOutput">
+            <div class="modal-contentOutput">
+                <div id="topBarOutput">
+                    <p id="topBarParagraphOutput">Output</p>
+                    <button class="btn draw-border" id="modalCloseButtonOutput" >X</button>
+                </div>
+                <div>
+                    <div class="OutputElements" >
+                        <p class="OutputParagraph">Input Function</p>
+                        <div class="box">
+                            <select id = "outputInputFunctionSelect">
+                                <option value="1">Maxim</option>
+                                <option value="2">Minim</option>
+                                <option value="3">Suma</option>
+                                <option value="4">Produs</option>
+                            </select>
+                          </div>
+
+                    </div>
+
+                    <div class="OutputElements" >
+                        <p class="OutputParagraph">Activation Function</p>
+                        <div class="box2">
+                            <select id="outputActivationFunctionSelect">
+                                <option value="1">Liniara</option>
+                                <option value="2">Sigmoidala</option>
+                                <option value="3">Tangenta Hiperbolica</option>
+                                <option value="4">Treapta</option>
+                                <option value="5">Semn</option>
+                            </select>
+                          </div>
+                    </div>
+                        
+                    <div class="OutputElements" >
+                        <div id="tetaOutputElement">
+                            <p class="OutputParagraph" >θ</p>
+                            <input type="number" class="OutputInputs"  id = "outputOmegaInput" value="0" step="0.01">
+                        </div>
+                        <div id="alfaOutputElement">
+                            <p class="OutputParagraph" value="1"> α</p>
+                            <input type="number" class="OutputInputs"   id = "outputAlfaInput" value="0" step="0.01">
+                        </div>
+
+                    </div>
+                    <div class="OutputElements" >
+                        <p class="OutputParagraph">Output Function</p>
+                        <div class="box3">
+                            <select id="OutputSelectBinar">
+                                <option value="1">Real</option>
+                                <option value="2">Binar</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <button class="btn draw-border" id="confirmOutputInfoButton" >Ok</button>
+
+                    
+                    
+                </div>
+
+
+            </div>
+        </div>
+       
+        <div class="modal">
+            <div class="modal-content">
+                <div id="topBarnewronalNetworkGeneralInfo">
+                    <p id="topBarnewronalNetworkGeneralInfoParagraph">Newronal Network General Information</p>
+                    <button class="btn draw-border" id="modalCloseButton" >X</button>
+                </div>
+                
+                <div id="newronalNetworkGeneralInfoTopSide">
+                    <div class="newronalNetworkGeneralInfoElements" >
+
+                        <p class="newronalNetworkGeneralInfoParagraph">Number of Neurons in the Input Layer</p>
+                        <input type="number" class="newronalNetworkGeneralInfoInputs" id="numberOfNeuronsInTheInputLayerInput" min="1"value="1">
+
+                    </div>
+                    <div class="newronalNetworkGeneralInfoElements"  >
+                        <p class="newronalNetworkGeneralInfoParagraph">Number of Neurons in the Output Layer</p>
+                        <input type="number" class="newronalNetworkGeneralInfoInputs" id="numberOfNeuronsInTheOutputLayerInput" min="1"value="1">
+
+                    </div>
+                    <div class="newronalNetworkGeneralInfoElements" >
+                        <p class="newronalNetworkGeneralInfoParagraph">Number of Hidden Layers(1-3)</p>
+                        <input type="number" class="newronalNetworkGeneralInfoInputs" id="numberOfLayersInput" min="1" max="3"value="1">
+
+                    </div>
+                    
+
+                </div>
+
+                <div id="newronalNetworkGeneralInfoBorder"></div>
+
+                <div id="newronalNetworkGeneralInfoBottomSide">
+                    <div class="newronalNetworkGeneralInfoElements" >
+
+                        <p class="newronalNetworkGeneralInfoParagraph">Number of Neurons in the Hidden Layer0</p>
+                        <input type="number" class="newronalNetworkGeneralInfoInputs" id="numberOfNeuronsInTheHiddenLayer0Input" min="1" value="1">
+
+                    </div>
+                    <div class="newronalNetworkGeneralInfoElements" id="numnerOfNeuronsInTheHiddenLayer1Window">
+
+                        <p class="newronalNetworkGeneralInfoParagraph">Number of Neurons in the Hidden Layer1</p>
+                        <input type="number" class="newronalNetworkGeneralInfoInputs" id="numberOfNeuronsInTheHiddenLayer1Input" min="1" value="1">
+
+                    </div>
+                    <div class="newronalNetworkGeneralInfoElements" id="numnerOfNeuronsInTheHiddenLayer2Window" >
+
+                        <p class="newronalNetworkGeneralInfoParagraph">Number of Neurons in the Hidden Layer2</p>
+                        <input type="number" class="newronalNetworkGeneralInfoInputs" id="numberOfNeuronsInTheHiddenLayer2Input" min="1" value="1">
+
+                    </div>
+
+                </div>
+                <button class="btn draw-border" id="confirmCreateNeuronalNetworkButton" >Create</button>
+
+            
+            </div>
+            
+        </div>
+        
+        <div id="neuronalNetworkDrawing">
+            <div id="column1" class="columnFlex"></div>
+            <div id="column2" class="columnFlex"></div>
+            <div id="column3" class="columnFlex"></div>
+            <div id="column4" class="columnFlex"></div>
+            <div id="column5" class="columnFlex"></div>
+            
+            
+            
+
+        </div>
+
+    </body>
+    <script  src="modalCode.js" type="text/javascript"></script>
+    <script  src="Code.js" type="text/javascript"></script>
+    <script  src="CalculeLayer0.js" type="text/javascript"></script>
+    <script  src="CalculeLayer1.js" type="text/javascript"></script>
+    <script  src="CalculeLayer2.js" type="text/javascript"></script>
+    <script  src="CalculareOutputLayer.js" type="text/javascript"></script>
+    <script  src="Write.js" type="text/javascript"></script>
+
+ </html>

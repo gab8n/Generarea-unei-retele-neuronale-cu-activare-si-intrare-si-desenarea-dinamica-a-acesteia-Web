@@ -1,0 +1,95 @@
+.modalLayer2 {
+  display: none;
+  position: fixed; 
+  padding-top: 180px;
+  left: 0; 
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.1);
+  
+}
+
+
+
+.modal-contentLayer2 {
+  position: relative; 
+  background-color: rgb(174 174 174 / 80%);
+  display: block;
+  border-radius: 10px;
+  margin: auto; 
+  width: 20%;  
+  height:42%;
+  border-radius: 15px;
+  -webkit-animation-name: animatetopLayer;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetopLayer;
+  animation-duration: 0.4s
+}
+#modalCloseButtonLayer2 {
+  float: right;
+  font: 700 0.5rem 'Roboto Slab', sans-serif; 
+  padding: 0.6em 1.0em;
+  margin-top: 11px;
+  margin-right: 11px;
+  
+  
+}
+
+#topBarLayer2{
+  background-color:rgb(33, 197, 197);
+  height:40px;
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: 0px 5px 5px #b3b3b3d0;
+  margin-bottom: 30px;
+  
+}
+#topBarParagraphLayer2{
+  float: left;
+  margin-top:11px;
+  margin-left: 11px;
+}
+.Layer2Elements{
+  width: 90%;
+  height:30px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.Layer2Paragraph{
+float:left;
+}
+#tetaLayer2Element{
+float: left;
+margin-right: 15px;
+margin-left: 15px;
+}
+#alfaLayer2Element{
+float: left;
+margin-right: 15px;
+}
+.Layer2Inputs{
+float:right;
+width: 50px;
+margin-left: 10px;
+}
+#confirmLayer2InfoButton{
+float: right;
+  font: 700 0.9rem 'Roboto Slab', sans-serif; 
+  padding: 0.6em 1.2em;
+  margin-right: 30px;
+  margin-top: -5px;
+}
+
+
+@-webkit-keyframes animatetopLayer {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+@keyframes animatetopLayer {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}

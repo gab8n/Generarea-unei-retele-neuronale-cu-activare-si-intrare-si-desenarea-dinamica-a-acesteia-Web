@@ -1,0 +1,102 @@
+body{
+    background-image: url("spikes.png");
+    margin: 0px;
+}
+p{
+    margin: 0px;
+    font: 700 1.0rem 'Roboto Slab', sans-serif;
+    color:  #5c5c5cea;
+}
+input{
+    font: 550 0.9rem 'Roboto Slab', sans-serif;
+    height:18px;
+    color:  #707070ea;
+    background-color: rgba(33, 197, 197, 0.582) ;
+    border: 1px solid rgba(136, 136, 136, 0.815);
+    border-radius: 5px;
+    outline:none;
+}
+#navigationBar{
+    width:98.4%;
+    height: 55px;
+    background-color:rgb(33, 197, 197);
+    margin: 0px;
+    padding: 12px;
+    box-shadow: 0px 5px 5px #b3b3b3d0;
+
+}
+#OutputButton{
+    float:right;
+    margin-left: 10px;
+}
+#Layer2Button{
+    float:right;
+    margin-left: 10px;
+    display: none;
+}
+#Layer1Button{
+    float:right;
+    margin-left: 10px;
+    display: none;
+}
+#Layer0Button{
+    float:right;
+    margin-left: 10px;
+}
+#canvas{
+    width:1370px;
+    height:500px;
+    border: 1px solid rgba(0, 0, 0, 0.815);
+    margin:70px;
+}
+#neuronalNetworkDrawing{
+    width: 1400px;
+    height: 600px;
+    margin:20px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.columnFlex{
+    display: flex;
+    flex-direction: column;
+   
+}
+.neurons{
+    display: inline-block;
+    text-decoration: none;
+    background: #87befd;
+    color: #FFF;
+    line-height: 52px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right:auto;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    overflow: visible;
+    transition: .4s;
+}
+.neurons:hover{
+    background: #668ad8 !important;
+}
+.columnFlex{
+    flex:1;
+    
+}
+#column3{
+    display:none;
+}
+#column4{
+    display:none;
+}
+
+/*
+#leftListNeuronalNetwork{
+    float:left;
+    width:250px;
+    height:1000px;
+    background-color: blue;
+    padding: 20px;
+}
+*/
